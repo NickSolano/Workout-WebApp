@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "globals": {
+        electronRequire : false,
+        afterEach: false,
+        beforeEach: false,
+        describe: false,
+        it: false
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            2,
+            4
+        ],
+        "linebreak-style": [
+            2,
+            "windows"
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "semi": [
+            2,
+            "never"
+        ],
+        "react/jsx-uses-vars" : 1,
+        "react/react-in-jsx-scope": 1,
+        "react/jsx-uses-react": 1,
+        "react/no-deprecated" : 1,
+        "react/no-string-refs" : 1,
+        "react/no-unknown-property" : 1,
+        "react/no-set-state" : 1,
+        "react/prop-types" : 1,
+        "react/self-closing-comp": 1,
+        "react/jsx-key" : 1,
+        "react/jsx-equals-spacing" : [2, "always"]
+    }
+}
